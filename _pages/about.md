@@ -1,5 +1,5 @@
 ---
-permalink: /
+# permalink: /
 title: "Hazel Bohon"
 author_profile: true
 redirect_from: 
