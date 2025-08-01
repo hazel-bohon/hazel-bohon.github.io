@@ -8,7 +8,7 @@ date: 2025-08-08
 location: "Minneapolis, MN, USA"
 ---
 
-![Image](/images/frog-vintage-postcard.jpg)
+![Image](/images/frogfrogs.jpg)
 
 Organizations are resistant to change, but it may not be for the reasons you think. When it comes to modernizing an application, navigating corporate bureaucracy is often the largest hurdle. Coordinating across multiple departments can be cumbersome and time-consuming. Dev teams often get stuck in a cycle of “hurry up and wait”.
 
@@ -19,5 +19,6 @@ By empowering your team to move the ball forward, get things done, and achieve a
 Links:
 ---
 
-- <i class="fa-regular fa-file-pdf"></i> [How do Committees Invent?](https://www.melconway.com/Home/pdf/committees.pdf)
-- <i class="fa-regular fa-file-pdf"></i> [Delimmas in a General Theory of Planning](https://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf)
+1. <i class="fa-regular fa-file-pdf"></i> [How do Committees Invent?](https://www.melconway.com/Home/pdf/committees.pdf) 
+1. <i class="fa-regular fa-file-pdf"></i> [Delimmas in a General Theory of Planning](https://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf) The origins of the term "wicked problem".
+1. [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html]) A great explanation of the Strangler Fig Pattern written by Martin Fowler
