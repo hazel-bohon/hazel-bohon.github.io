@@ -8,7 +8,7 @@ date: 2025-08-08
 location: "Minneapolis, MN, USA"
 ---
 
-![Image](/images/frogfrogs.jpg)
+![Image](/images/frogs.jpg)
 
 Organizations are resistant to change, but it may not be for the reasons you think. When it comes to modernizing an application, navigating corporate bureaucracy is often the largest hurdle. Coordinating across multiple departments can be cumbersome and time-consuming. Dev teams often get stuck in a cycle of “hurry up and wait”.
 
