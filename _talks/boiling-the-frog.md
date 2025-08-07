@@ -21,5 +21,5 @@ Links:
 
 1. <i class="fa-regular fa-file-pdf"></i> [How do Committees Invent?](https://www.melconway.com/Home/pdf/committees.pdf) 
 1. <i class="fa-regular fa-file-pdf"></i> [Delimmas in a General Theory of Planning](https://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf) The origins of the term "wicked problem".
-1. [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html]) A great explanation of the Strangler Fig Pattern written by Martin Fowler
+1. [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html) A great explanation of the Strangler Fig Pattern written by Martin Fowler
 1. [This is Strategy](https://seths.blog/tis/) by Seth Godin
