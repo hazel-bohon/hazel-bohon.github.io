@@ -3,9 +3,9 @@ title: "Boiling the Frog: Switching to a Modern Message Based System without any
 collection: talks
 # type: "Conference proceedings talk"
 permalink: /boiling-the-frog
-venue: "Twin Cities .NET User Group"
-date: 2025-08-08
-location: "Minneapolis, MN, USA"
+venue: "Kansas City Developer Conference 2025"
+date: 2025-08-15
+location: "Kansas City, MO, USA"
 ---
 
 ![Image](/images/frogs.jpg)
@@ -16,12 +16,12 @@ Most talks about modernization talk about the strangler fig pattern. In this ses
 
 By empowering your team to move the ball forward, get things done, and achieve as much progress as possible independently, you will have happier developers and happier stakeholders.
 
-The slides from my talk can be <i class="fa-regular fa-file-pdf"></i> [found here](/files/boil-the-frog.pdf).
-
 Links:
 ---
 
+1. <i class="fa-regular fa-file-pdf"></i> [Slides from the talk](/files/boil-the-frog.pdf)
+1. <i class="fa-brands fa-youtube"></i> [Boiling the Frog, 2025-08-07](https://www.youtube.com/watch?v=9taAUeBFEa0&t=24s) at the [Twin Cities .NET User Group](https://www.meetup.com/tcdnug/).
 1. <i class="fa-regular fa-file-pdf"></i> [How do Committees Invent?](https://www.melconway.com/Home/pdf/committees.pdf) 
 1. <i class="fa-regular fa-file-pdf"></i> [Delimmas in a General Theory of Planning](https://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf) The origins of the term "wicked problem".
-1. [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html) A great explanation of the Strangler Fig Pattern written by Martin Fowler
-1. [This is Strategy](https://seths.blog/tis/) by Seth Godin
+1. <i class="fa-solid fa-link"></i> [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html) A great explanation of the Strangler Fig Pattern written by Martin Fowler
+1. <i class="fa-solid fa-link"></i> [This is Strategy](https://seths.blog/tis/) by Seth Godin
