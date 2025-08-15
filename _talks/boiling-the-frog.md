@@ -16,6 +16,8 @@ Most talks about modernization talk about the strangler fig pattern. In this ses
 
 By empowering your team to move the ball forward, get things done, and achieve as much progress as possible independently, you will have happier developers and happier stakeholders.
 
+The slides from my talk can be <i class="fa-regular fa-file-pdf"></i> [found here](/files/boil-the-frog.pdf).
+
 Links:
 ---
 
