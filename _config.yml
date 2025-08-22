@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Hazel Bohon"
-  pronouns         : "she/her"
-  bio              : "Hazel is a software engineer with extensive experience across multiple industries. Today, she works primarily with .NET, but she has never met a programming language she hasn’t managed to fall in love with. When she isn’t coding, you can find her riding bikes with her kids, or in the woods hunting for mushrooms."
+  #pronouns         : "she/her"
+  bio              : "software engineer, mom, swamp witch"
   location         : "Minneapolis, MN"
   employer         : "Particular Software"
   uri              : # URL
