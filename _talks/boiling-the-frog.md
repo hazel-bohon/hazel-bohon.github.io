@@ -3,9 +3,9 @@ title: "Boiling the Frog: Switching to a Modern Message Based System without any
 collection: talks
 # type: "Conference proceedings talk"
 permalink: /boiling-the-frog
-venue: "Kansas City Developer Conference 2025"
-date: 2025-08-15
-location: "Kansas City, MO, USA"
+venue: "VSLive! San Diego"
+date: 2025-09-10
+location: "San Diego, CA, USA"
 ---
 
 ![Image](/images/frogs.jpg)
@@ -26,3 +26,4 @@ Links:
 1. <i class="fa-regular fa-file-pdf"></i> [Delimmas in a General Theory of Planning](https://www.sympoetic.net/Managing_Complexity/complexity_files/1973%20Rittel%20and%20Webber%20Wicked%20Problems.pdf) The origins of the term "wicked problem".
 1. <i class="fa-solid fa-link"></i> [Strangler Fig](https://martinfowler.com/bliki/StranglerFigApplication.html) A great explanation of the Strangler Fig Pattern written by Martin Fowler
 1. <i class="fa-solid fa-link"></i> [This is Strategy](https://seths.blog/tis/) by Seth Godin
+1. <i class="fa-solid fa-lonk"><i> [Boiled Frog Recipe](https://www.seriouseats.com/the-nasty-bits-frog-soup-1)
