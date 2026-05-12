@@ -4,6 +4,7 @@ title: "Hazel Bohon"
 tagline: "Software Engineer / Swamp Witch"
 permalink: /
 hide_top_nav: true
+vaporwave: true
 links:
   - label: "Talk – Boiling the Frog"
     url: /boiling-the-frog

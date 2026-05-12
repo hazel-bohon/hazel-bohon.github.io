@@ -89,10 +89,10 @@ a {
 }
 
 .panel {
-  /* background: var(--surface); */
-  /* border: 1px solid var(--border); */
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  /* padding: 1rem; */
+  padding: 1rem;
   margin-top: 1.85rem;
 }
 
@@ -238,4 +238,223 @@ a {
   margin-top: 0.7rem;
   color: var(--muted);
   font-size: 0.94rem;
+}
+
+/* Homepage vaporwave aesthetic */
+body.theme-vaporwave {
+  color: #f7f0ff;
+  /* background-size:100% 100%; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.03) 0,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 32px
+    ),
+    radial-gradient(circle at 15% 20%, rgba(255, 104, 208, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 5%, rgba(0, 255, 246, 0.26), transparent 42%),
+    linear-gradient(180deg, #1b1038 0%, #120a2b 40%, #0b0620 100%);
+}
+
+body.theme-vaporwave .site-header {
+  font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+  font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+body.theme-vaporwave::before {
+  content: "";
+  /* position: fixed; */
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  opacity: 0.25;
+}
+
+body.theme-vaporwave .site-shell {
+  max-width: 52rem;
+  /* height:100vh; */
+  min-height: 100dvh;
+  position: relative;
+  z-index: 1;
+  /* border: 2px solid rgba(255, 141, 231, 0.55); */
+  /* border-radius: 18px; */
+  /* box-shadow:
+    inset 0 0 0 2px rgba(111, 238, 255, 0.35),
+    0 0 2rem rgba(255, 83, 216, 0.2); */
+  padding: 1rem 1.1rem 2.2rem;
+}
+
+body.theme-vaporwave .site-header {
+  text-shadow: 0 0 16px rgba(255, 94, 220, 0.45);
+}
+
+body.theme-vaporwave .site-title {
+  color: #ff9df3;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow:
+    0 0 0.45rem rgba(255, 141, 243, 0.8),
+    0.08rem 0.08rem 0 #46ecff;
+}
+
+body.theme-vaporwave .site-tagline {
+  color: #84fff8;
+}
+
+body.theme-vaporwave .site-avatar {
+  border-color: #31f6ff;
+  box-shadow:
+    0 0 0.5rem rgba(49, 246, 255, 0.7),
+    0 0 1.1rem rgba(255, 109, 223, 0.5);
+}
+
+body.theme-vaporwave .panel {
+  background: linear-gradient(165deg, rgba(37, 22, 74, 0.78), rgba(19, 13, 42, 0.84));
+  border: 3px double rgba(109, 226, 255, 0.55);
+  box-shadow:
+    0 0 1rem rgba(13, 250, 255, 0.2),
+    0 0 2rem rgba(255, 79, 207, 0.15),
+    inset 0 0 1.2rem rgba(255, 108, 225, 0.15);
+}
+
+body.theme-vaporwave .button-link {
+  background: linear-gradient(90deg, rgba(255, 78, 204, 0.24), rgba(67, 232, 255, 0.12));
+  border: 2px outset rgba(255, 123, 226, 0.7);
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+body.theme-vaporwave .button-link strong {
+  color: #ffe6ff;
+}
+
+body.theme-vaporwave .button-link span {
+  color: #b7fff8;
+}
+
+body.theme-vaporwave .button-link:hover,
+body.theme-vaporwave .button-link:focus-visible {
+  border-color: #8af9ff;
+  box-shadow: 0 0 0.9rem rgba(138, 249, 255, 0.34);
+  transform: translateY(-1px);
+}
+
+body.theme-vaporwave .social-icon {
+  color: #93feff;
+}
+
+body.theme-vaporwave .social-icon svg {
+  width: 1.9rem;
+  height: 1.9rem;
+  filter: drop-shadow(0 0 0.35rem rgba(147, 254, 255, 0.8));
+  animation: geo-pulse 1.4s ease-in-out infinite;
+}
+
+body.theme-vaporwave .social-icon:hover,
+body.theme-vaporwave .social-icon:focus-visible {
+  color: #ff9df3;
+}
+
+body.theme-vaporwave .geo-zone {
+  overflow: hidden;
+}
+
+body.theme-vaporwave .geo-banner {
+  border: 2px ridge rgba(255, 180, 239, 0.78);
+  background: linear-gradient(90deg, rgba(255, 79, 207, 0.3), rgba(77, 225, 255, 0.22));
+  color: #fff2ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 0.5rem rgba(255, 162, 240, 0.75);
+  padding: 0.38rem 0;
+}
+
+body.theme-vaporwave .geo-stickerbar {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+body.theme-vaporwave .geo-sticker {
+  font-size: 1.7rem;
+  line-height: 1;
+  display: inline-block;
+  filter: drop-shadow(0 0 0.35rem rgba(255, 191, 244, 0.85));
+  animation: geo-wiggle 2.4s ease-in-out infinite;
+}
+
+body.theme-vaporwave .geo-sticker:nth-child(2n) {
+  animation-delay: 0.25s;
+}
+
+body.theme-vaporwave .geo-counter {
+  margin: 0.75rem auto 0;
+  max-width: 14.5rem;
+  text-align: center;
+  padding: 0.28rem 0.6rem;
+  border: 2px inset rgba(145, 238, 255, 0.8);
+  background: rgba(7, 15, 37, 0.72);
+  color: #8fffff;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.1em;
+  font-size: 0.83rem;
+}
+
+body.theme-vaporwave .geo-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+body.theme-vaporwave .geo-badge {
+  border: 2px groove rgba(255, 169, 236, 0.85);
+  background: rgba(32, 14, 68, 0.9);
+  color: #b8fff9;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.71rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: geo-blink 1.15s steps(1, end) infinite;
+}
+
+body.theme-vaporwave .geo-badge:nth-child(2n) {
+  animation-delay: 0.3s;
+}
+
+@keyframes geo-blink {
+  0%, 55% { opacity: 1; }
+  56%, 100% { opacity: 0.6; }
+}
+
+@keyframes geo-wiggle {
+  0%, 100% { transform: rotate(-3deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-1px); }
+}
+
+@keyframes geo-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
