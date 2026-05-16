@@ -2,9 +2,9 @@
 title: "Microservices for Pragmatists"
 collection: talks
 permalink: /microservices-for-pragmatists
-venue: "DevNexus"
-date: 2026-03-06
-location: "Atlanta, GA, USA"
+# venue: "DevNexus"
+# date: 2026-03-06
+# location: "Atlanta, GA, USA"
 ---
 
 ![Image](/images/microservices.png)

@@ -2,30 +2,38 @@
 layout: compress
 ---
 
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale | default: 'en-US' | slice: 0,2 }}">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/linkhub.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
 
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
+  <body{% if page.theme %} class="theme-{{page.theme}}"{%else%} class="theme-vaporwave"{% endif %}>
+  <!-- <body{% if page.vaporwave %} class="theme-vaporwave"{% endif %}> -->
+    <main class="site-shell">
+      {% assign avatar = site.author.avatar %}
+      {% if page.suppress_header != true %}
+      <header class="site-header">
+        {% if avatar %}
+          <img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}">
+        {% endif %}
+        <h1 class="site-title"><a href="{{ '/' | relative_url }}" style="text-decoration:none;">{{ site.name | default: site.title }}</a></h1>
+        {% if site.description %}
+          <p class="site-tagline">{{ site.description }}</p>
+        {% endif %}
+      </header>
+      {% endif %}
+      {{ content }}
+        {% if site.data.navigation.main and page.hide_top_nav != true %}
+          <nav class="site-nav" aria-label="Primary">
+            {% for item in site.data.navigation.main %}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+          </nav>
+        {% endif %}
+    </main>
   </body>
 </html>

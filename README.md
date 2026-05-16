@@ -1,7 +1,17 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# hazel.codes
+**Linkhub-style Jekyll site with markdown-first content.**
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+## Content model
+
+- Home link page: `_pages/home.md`
+- Blog posts: `_posts/*.md`
+- Blog archive: `/year-archive/` from `_pages/year-archive.html`
+
+## Theme architecture
+
+- Shared stylesheet: `assets/css/linkhub.css`
+- Base layout: `_layouts/default.html`
+- Content layouts: `_layouts/main.html`, `_layouts/archive.html`, `_layouts/single.html`, `_layouts/talk.html`
 
 # Getting Started
 
