@@ -83,6 +83,22 @@ a {
   background: var(--surface);
 }
 
+.links-in-bio {
+  margin-top: 5vh !important;
+  min-height: 90vh;
+}
+
+.links-in-bio .social-icons {
+  margin: 2rem;
+}
+
+.links-in-bio .site-avatar {
+  width: 15rem;
+  height: 15rem;
+  margin: 5rem;
+  opacity: 0.9;
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible {
   border-color: var(--focus);
@@ -242,11 +258,12 @@ a {
 
 /* Homepage vaporwave aesthetic */
 body.theme-vaporwave {
-  color: #f7f0ff;
+  /* color: #f7f0ff; */
   /* background-size:100% 100%; */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-image: url("../../images/static.jpg"); */
   background:
     repeating-linear-gradient(
       90deg,
@@ -263,8 +280,10 @@ body.theme-vaporwave {
       transparent 32px
     ),
     radial-gradient(circle at 15% 20%, rgba(255, 104, 208, 0.35), transparent 45%),
-    radial-gradient(circle at 85% 5%, rgba(0, 255, 246, 0.26), transparent 42%),
-    linear-gradient(180deg, #1b1038 0%, #120a2b 40%, #0b0620 100%);
+    radial-gradient(circle at 85% 5%, rgba(0, 255, 246, 0.26), transparent 40%),
+    linear-gradient(190deg, rgba(12, 16, 56, 0.5) 0%,  rgba(12,16,56, 1) 30%, rgba(18, 10, 43, 1) 40%, rgba(11, 6, 32, 1) 100%),
+    url("../../images/lace.jpg");
+
 }
 
 body.theme-vaporwave .site-header {
@@ -327,12 +346,24 @@ body.theme-vaporwave .site-avatar {
 }
 
 body.theme-vaporwave .panel {
-  background: linear-gradient(165deg, rgba(37, 22, 74, 0.78), rgba(19, 13, 42, 0.84));
+  background: linear-gradient(270deg, rgba(37, 22, 74, 0.503), rgba(19, 13, 42, 0.4));
   border: 3px double rgba(109, 226, 255, 0.55);
   box-shadow:
     0 0 1rem rgba(13, 250, 255, 0.2),
     0 0 2rem rgba(255, 79, 207, 0.15),
     inset 0 0 1.2rem rgba(255, 108, 225, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.panel::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../images/static.jpg");
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.15;
 }
 
 body.theme-vaporwave .button-link {

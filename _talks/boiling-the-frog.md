@@ -1,12 +1,7 @@
 ---
 title: "Boiling the Frog: Switching to a Modern Message Based System without anyone Noticing"
 collection: talks
-# type: "Conference proceedings talk"
 permalink: /boiling-the-frog
-# venue: "VSLive!"
-# date: 2025-09-10
-# location: "San Diego, CA, USA"
-vaporwave: True
 ---
 
 ![Image](/images/frogs.jpg)

@@ -6,24 +6,18 @@ layout: default
 {% if site.author.github or site.author.linkedin or site.author.bluesky or site.author.email %}
   {% assign has_social = true %}
 {% endif %}
-<!-- {% if page.vaporwave %}
-  <section class="panel geo-zone">
-    <div class="geo-banner">
-      <marquee behavior="alternate" scrollamount="9">WELCOME TO HAZEL'S CYBER SWAMP ✦ BEST VIEWED ON A CRT ✦ Y2K FOREVER ✦</marquee>
-    </div>
-    <div class="geo-stickerbar" aria-hidden="true">
-      <span class="geo-sticker">🐬</span>
-      <span class="geo-sticker">💿</span>
-      <span class="geo-sticker">🌴</span>
-      <span class="geo-sticker">🛸</span>
-      <span class="geo-sticker">🪩</span>
-      <span class="geo-sticker">✨</span>
-    </div>
-    <p class="geo-counter">VISITORS: 00001337</p>
-  </section>
-{% endif %} -->
+  <section class="links-in-bio panel">
+      {% assign avatar = site.author.avatar %}
+      <header class="site-header">
+      {% if avatar %}
+          <img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}">
+        {% endif %}
+        <h1 class="site-title"><a href="{{ '/' | relative_url }}" style="text-decoration:none;">{{ site.name | default: site.title }}</a></h1>
+        {% if site.description %}
+          <p class="site-tagline">{{ site.description }}</p>
+        {% endif %}
+      </header>
 {% if has_social %}
-  <section class="panel">
     <div class="social-icons" aria-label="Social links">
       {% if site.author.github %}
         <a class="social-icon" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -69,10 +63,8 @@ layout: default
         </a>
       {% endif %}
     </div>
-  </section>
 {% endif %}
 
-<section class="panel">
   {% if page.links %}
     <div class="button-grid">
       {% for item in page.links %}

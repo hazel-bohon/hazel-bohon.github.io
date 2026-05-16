@@ -11,9 +11,11 @@ layout: compress
     <link rel="stylesheet" href="{{ '/assets/css/linkhub.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
 
-  <body{% if page.vaporwave %} class="theme-vaporwave"{% endif %}>
+  <body{% if page.theme %} class="theme-{{page.theme}}"{%else%} class="theme-vaporwave"{% endif %}>
+  <!-- <body{% if page.vaporwave %} class="theme-vaporwave"{% endif %}> -->
     <main class="site-shell">
       {% assign avatar = site.author.avatar %}
+      {% if page.suppress_header != true %}
       <header class="site-header">
         {% if avatar %}
           <img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}">
@@ -23,6 +25,7 @@ layout: compress
           <p class="site-tagline">{{ site.description }}</p>
         {% endif %}
       </header>
+      {% endif %}
       {{ content }}
         {% if site.data.navigation.main and page.hide_top_nav != true %}
           <nav class="site-nav" aria-label="Primary">

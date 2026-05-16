@@ -11,7 +11,7 @@
 
 - Shared stylesheet: `assets/css/linkhub.css`
 - Base layout: `_layouts/default.html`
-- Content layouts: `_layouts/linktree.html`, `_layouts/archive.html`, `_layouts/single.html`, `_layouts/talk.html`
+- Content layouts: `_layouts/main.html`, `_layouts/archive.html`, `_layouts/single.html`, `_layouts/talk.html`
 
 # Getting Started
 

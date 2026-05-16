@@ -1,10 +1,10 @@
 ---
-layout: linktree
+layout: main
 title: "Hazel Bohon"
-tagline: "Software Engineer / Swamp Witch"
+tagline: "Software engineer, public speaker, mom, swamp witch. Who says you can't have it all?"
 permalink: /
 hide_top_nav: true
-vaporwave: true
+suppress_header: true
 links:
   - label: "Talk – Boiling the Frog"
     url: /boiling-the-frog
