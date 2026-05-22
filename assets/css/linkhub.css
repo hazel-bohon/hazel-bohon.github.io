@@ -1,24 +1,11 @@
 /* Linkhub-inspired minimal theme */
 :root {
-  color-scheme: light dark;
-  --bg: #f4f5f7;
-  --surface: #ffffff;
-  --text: #1a1d24;
-  --muted: #616877;
-  --border: #d8dce4;
-  --focus: #111111;
-  --radius: 14px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1116;
-    --surface: #171b23;
-    --text: #eef1f7;
-    --muted: #a9b0be;
-    --border: #2a313d;
-    --focus: #ffffff;
-  }
+  --bg: #0f1116;
+  --surface: #171b23;
+  --text: #eef1f7;
+  --muted: #a9b0be;
+  --border: #2a313d;
+  --focus: #ffffff;
 }
 
 * {
