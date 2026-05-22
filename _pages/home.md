@@ -6,12 +6,12 @@ permalink: /
 hide_top_nav: true
 suppress_header: true
 links:
-  - label: "Talk – Boiling the Frog"
-    url: /boiling-the-frog
-    note: "Application modernization without anyone noticing"
   - label: "Talk – Microservices for Pragmatists"
     url: /microservices-for-pragmatists
     note: "A practical introduction to when and how to use microservices"
+  - label: "Talk – Boiling the Frog"
+    url: /boiling-the-frog
+    note: "Application modernization without anyone noticing"
 
   # - label: "About"
   #   url: /about/
