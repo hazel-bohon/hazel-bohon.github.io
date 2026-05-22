@@ -43,7 +43,6 @@ a {
 }
 
 .site-header {
-  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -286,9 +285,16 @@ body.theme-vaporwave {
 
 }
 
+body.theme-vaporwave .main-header {
+  font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+  font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+  text-align: center;
+  /* display:flex; */
+}
 body.theme-vaporwave .site-header {
   font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
   font-family: "Comic Sans MS", "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+  display:flex;
 }
 
 body.theme-vaporwave::before {
@@ -339,6 +345,7 @@ body.theme-vaporwave .site-tagline {
 }
 
 body.theme-vaporwave .site-avatar {
+  margin: 1rem;
   border-color: #31f6ff;
   box-shadow:
     0 0 0.5rem rgba(49, 246, 255, 0.7),

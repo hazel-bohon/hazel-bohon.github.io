@@ -8,7 +8,7 @@ layout: default
 {% endif %}
   <section class="links-in-bio panel">
       {% assign avatar = site.author.avatar %}
-      <header class="site-header">
+      <header class="main-header">
       {% if avatar %}
           <img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}">
         {% endif %}

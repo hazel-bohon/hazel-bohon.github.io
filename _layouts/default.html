@@ -18,12 +18,14 @@ layout: compress
       {% if page.suppress_header != true %}
       <header class="site-header">
         {% if avatar %}
-          <img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}">
+          <a href="{{ '/' | relative_url }}" style="text-decoration:none;"><img class="site-avatar" src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ '/images/' | append: avatar | relative_url }}{% endif %}" alt="{{ site.name | default: site.title }}"></a>
         {% endif %}
+        <div>
         <h1 class="site-title"><a href="{{ '/' | relative_url }}" style="text-decoration:none;">{{ site.name | default: site.title }}</a></h1>
         {% if site.description %}
           <p class="site-tagline">{{ site.description }}</p>
         {% endif %}
+        </div>
       </header>
       {% endif %}
       {{ content }}
